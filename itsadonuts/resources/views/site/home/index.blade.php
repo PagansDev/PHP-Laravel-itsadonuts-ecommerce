@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap');
     </style>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/home/home.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -36,9 +36,20 @@
             <a href="#" class="social__link">
                 <ion-icon name="chatbubble-ellipses-outline" class="menu__img"></ion-icon>
             </a>
-            <a href="#" class="social__link">
+            <div class="social__link" id="shareBtn">
                 <ion-icon name="share-social" class="menu__img"></ion-icon>
-            </a>
+            </div>
+            <script>
+                var shareBtn = document.getElementById("shareBtn");
+
+                shareBtn.addEventListener("click", function() {
+                    navigator.share({
+                        url: document.URL,
+                        title: document.title,
+                        text: "Confira os melhores Mini Donuts da região de Sorocaba!"
+                    });
+                });
+            </script>
         </div>
         <section class="order__container swing-in-top-fwd">
             <h2 class="subtittle">Monte Seu Pedido:</h2>

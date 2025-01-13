@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho - It's a Donuts</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;600&display=swap');
     </style>
     <link rel="shortcut icon" href="../../../assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="css/order/order.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
